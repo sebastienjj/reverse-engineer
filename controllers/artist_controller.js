@@ -7,7 +7,30 @@ Artist.deleteMany({},(error, deletedArtist)=>{
     if(error)
     console.log(error);
     Artist.insertMany([
-      
+        {
+            Name :'SoftRider62',
+            Artwork : [ "Lost city", "Hollow mountains","Dark days","Stillness"],
+            Mediums : 'Digitala Art',
+            numberOfPieces: '4'
+        },
+        {
+          Name :'EiskalterEngel18',
+          Artwork : [ "Van", "The ice Breaker","Liquor Store","Modern Japan"],
+          Mediums : 'Digital Art',
+          numberOfPieces: '4'
+        },
+        {
+          Name :'BlackSunRising',
+          Artwork : [ "Birds in love", "The barbary ground squirrel","Big_black_bird","Jumping_high"],
+          Mediums : 'Digitala Art',
+          numberOfPieces: '4'
+        },
+        {
+          Name :'SomeStuffIdrew',
+          Artwork : [ "Chicken", "Drool","Husky","Panda"],
+          Mediums : 'Ink',
+          numberOfPieces: '4'
+        },
     ],
     function(error, createdArtist){
         if(error){
