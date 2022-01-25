@@ -5,9 +5,9 @@ const PORT = 2000;
 
 // app.set('veiw engine')
 
- app.get('/',(req, res)=>{
-     res.send('Hello world');
- });
+app.get('/',(req, res)=>{
+    res.send('Hello world');
+});
 
  app.get('/*', (req, res)=>{
      return res.sendStatus(404)
