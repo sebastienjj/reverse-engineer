@@ -1,13 +1,13 @@
     <!DOCTYPE html>
     <html lang="en">
-    <%- include ('../partials/head.ejs', {page: artWork.Title }) %>
+    <%- include ('../partials/head.ejs', {page: artist.Title }) %>
       
     This is my nav bar now
     <%- include ('../partials/nav.ejs') %>
 
         <section class="hero is-medium has-background-light">
         <div class="hero-body">
-            <h1 class="title">artWork Show Page</h1>
+            <h1 class="title">artist Show Page</h1>
         </div>
         </section>
 
@@ -15,23 +15,23 @@
         <article class="media">
             <figure class="media-left">
             <p class="image is-328x328">
-                <img src="<%= artWork.Image %>" alt="artWork img" />
+                <img src="<%= artist.Image %>" alt="artist img" />
             </p>
             </figure>
             <div class="media-content">
             <div class="content">
-                <h3>Title: <%= artWork.Title %></h3>
-                <small>Artist: $<%= artWork.Artist %></small>
-                <small>Mediums: $<%= artWork.Mediums %></small>
-                <small>Date: $<%= artWork.Date %></small>
+                <h3>Title: <%= artist.Title %></h3>
+                <small>Artist: $<%= artist.Artist %></small>
+                <small>Mediums: $<%= artist.Mediums %></small>
+                <small>Date: $<%= artist.Date %></small>
                 <div class="field mt-5 is-grouped">
                 <div class="control">
-                    <a class="button is-info" href="/artWorks/<%= artWork._id %>/edit">Edit artWork
+                    <a class="button is-info" href="/artists/<%= artist._id %>/edit">Edit artist
                     </a>
                 </div>
                 <p class="control">
-                    <form action="/artWorks/<%= artWork._id %>?_method=DELETE" method="POST">
-                        <input class="button is-danger" type="submit" value="Delete artWork"/>                    
+                    <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
+                        <input class="button is-danger" type="submit" value="Delete artist"/>                    
                     </form>
                 </p>
                 </div>
