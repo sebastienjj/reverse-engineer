@@ -19,6 +19,8 @@ const artistSchema = new mongoose.Schema(
    type:Number, 
   //  required:true
  },
+ Image: [{type:String
+ }]
  });
 const Artist = mongoose.model('Artist', artistSchema);
 module.exports = Artist;

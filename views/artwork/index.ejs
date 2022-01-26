@@ -14,21 +14,21 @@
     
     <main class="container is-max-widescreen">
         <div class="columns is-multiline p-5">
-            <% for(let idx = 0; idx < artWork.length; idx++){ %> 
-                <% const artWork = artWork[idx] %>
+            <% for(let idx = 0; idx < artworks.length; idx++){ %> 
+                <% const artwork = artworks[idx] %>
                 
                 <div class="column is-one-third">
                     <article class="card">
                         <section class="card-image">
                             <figure class="image is-3by3">
-                                <img src="<%= artWork.Image %>" alt="Placeholder image" />
+                                <img src="<%= artwork.Image %>" alt="Placeholder image" />
                             </figure>
                         </div>
                     </section>
                     <div class="card-content">
                         <div class="content">
                             <h3>
-                                <a href="/artWork/<%= artWork._id %>"><%= artWork.Title %> </a>
+                                <a href="/artwork/<%= artwork._id %>"><%= artwork.Title %> </a>
                             </h3>
                         </div>
                     </div>
