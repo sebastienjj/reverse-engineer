@@ -11,7 +11,7 @@ ArtWork.deleteMany({}, (error, deletedArtWork)=>{
             Artist: "SoftRider62",
             Mediums: "Digital Art",
             Date: "December 2019",
-            Image:"https://imgur.com/K8iCSyy"
+            Image:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f4e7a5a6-5bb9-4d74-badc-511a4a806c8a/ddmnc55-7f4b0fde-40a3-4a4e-9f64-a5f8d0425590.jpg/v1/fill/w_444,h_250,q_70,strp/lost_city_by_softyrider62_ddmnc55-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAxIiwicGF0aCI6IlwvZlwvZjRlN2E1YTYtNWJiOS00ZDc0LWJhZGMtNTExYTRhODA2YzhhXC9kZG1uYzU1LTdmNGIwZmRlLTQwYTMtNGE0ZS05ZjY0LWE1ZjhkMDQyNTU5MC5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pvLEAPh1mh0BywyIpmWMU6g_NfKnVuO4PfPABRB138I"
         },
         {
             Title: "Hollow mountains",
