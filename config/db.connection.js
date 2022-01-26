@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const connectionStr = 'mongodb://127.0.0.1/product';
+const connectionStr = 'mongodb://127.0.0.1/arts';
 
 mongoose.connect(connectionStr)
 
