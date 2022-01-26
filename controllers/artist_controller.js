@@ -21,19 +21,28 @@ Artist.deleteMany({},(error, deletedArtist)=>{
           Name :'EiskalterEngel18',
           Artwork : [ "Van", "The ice Breaker","Liquor Store","Modern Japan"],
           Mediums : 'Digital Art',
-          numberOfPieces: '4'
+          numberOfPieces: '4',
+          Image:[
+
+          ]
         },
         {
           Name :'BlackSunRising',
           Artwork : [ "Birds in love", "The barbary ground squirrel","Big_black_bird","Jumping_high"],
           Mediums : 'Digital Art',
           numberOfPieces: '4'
+          Image:[
+
+          ]
         },
         {
           Name :'SomeStuffIdrew',
           Artwork : [ "Chicken", "Drool","Husky","Panda"],
           Mediums : 'Ink',
           numberOfPieces: '4'
+          Image:[
+              
+          ]
         },
     ],
     function(error, createdArtist){

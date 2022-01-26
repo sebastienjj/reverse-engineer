@@ -99,28 +99,28 @@ const {ArtWork} =  require('../models');
 //             Artist: "SomeStuffIdrew",
 //             Mediums: "Ink",
 //             Date: " Apr 28, 2016", 
-//             Image:""
+//             Image:"https://i.imgur.com/ErnA3FG.jpg"
 //         },
 //         {
 //             Title: "Drool",
 //             Artist: "SomeStuffIdrew",
 //             Mediums: "Ink",
 //             Date: " Apr 28, 2016", 
-//             Image:""
+//             Image:"https://i.imgur.com/l42fKzR.jpg"
 //         },
 //         {
-//             Title: "Husky",
+//             Title: "Princess",
 //             Artist: "SomeStuffIdrew",
 //             Mediums: "Ink",
 //             Date: " Apr 28, 2016", 
-//             Image:""
+//             Image:"https://i.imgur.com/UiNIvCU.jpg"
 //         },
 //         {
 //             Title: "Panda",
 //             Artist: "SomeStuffIdrew",
 //             Mediums: "Ink",
 //             Date: " Apr 28, 2016", 
-//             Image:""
+//             Image:"https://i.imgur.com/qcDNyxk.jpg"
 //         },
 //     ],
 //     function (error, createdArtWork) {
