@@ -1,5 +1,5 @@
 module.exports= {
-    artist: require('./art_controllers'),
-    artwork: require('./artwork_controllers'),
-    user: require('./user_controllers')
+    artist: require('./artist_controller'),
+    artwork: require('./artwork_controller'),
+    user: require('./user_controller')
 }

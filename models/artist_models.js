@@ -3,16 +3,21 @@ const Schema = mongoose.Schema; //
 const artistSchema = new mongoose.Schema(
  {
  Name: {
-    type: String, required: true, unique: true
+    type: String, 
+    // required: true, 
+    // unique: true
    },
  Artwork: [{
-   type:String, required:true
+   type:String, 
+  //  required:true
  }],
  Mediums: {
-    type: String, required: true
+    type: String, 
+    // required: true
    },
  numberOfPieces: {
-   type:Number, required:true
+   type:Number, 
+  //  required:true
  },
  });
 const Artist = mongoose.model('Artist', artistSchema);
