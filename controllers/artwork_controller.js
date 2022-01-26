@@ -6,6 +6,10 @@ ArtWork.deleteMany({}, (error, deletedArtWork)=>{
     if(error) console.log(error);
     ArtWork.insertMany(
       [
+// ArtWork.deleteMany({}, (error, deletedArtWork)=>{
+//     if(error) console.log(error);
+//     ArtWork.insertMany(
+//       [
         {
             Title: "Lost city",
             Artist: "SoftRider62",
