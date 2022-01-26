@@ -1,4 +1,4 @@
-const route = require('color-convert/route');
+// const route = require('color-convert/route');
 const express = require('express');
 const router = express.Router();
 const {Artist} = require('../models');
@@ -10,7 +10,7 @@ Artist.deleteMany({},(error, deletedArtist)=>{
         {
             Name :'SoftRider62',
             Artwork : [ "Lost city", "Hollow mountains","Dark days","Stillness"],
-            Mediums : 'Digitala Art',
+            Mediums : 'Digital Art',
             numberOfPieces: '4'
         },
         {
@@ -22,7 +22,7 @@ Artist.deleteMany({},(error, deletedArtist)=>{
         {
           Name :'BlackSunRising',
           Artwork : [ "Birds in love", "The barbary ground squirrel","Big_black_bird","Jumping_high"],
-          Mediums : 'Digitala Art',
+          Mediums : 'Digital Art',
           numberOfPieces: '4'
         },
         {

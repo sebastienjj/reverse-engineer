@@ -9,28 +9,28 @@ ArtWork.deleteMany({}, (error, deletedArtWork)=>{
         {
             Title: "Lost city",
             Artist: "SoftRider62",
-            Mediums: "Digitala Art",
+            Mediums: "Digital Art",
             Date: "December 2019",
-            Image:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f4e7a5a6-5bb9-4d74-badc-511a4a806c8a/ddmnc55-7f4b0fde-40a3-4a4e-9f64-a5f8d0425590.jpg/v1/fill/w_444,h_250,q_70,strp/lost_city_by_softyrider62_ddmnc55-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAxIiwicGF0aCI6IlwvZlwvZjRlN2E1YTYtNWJiOS00ZDc0LWJhZGMtNTExYTRhODA2YzhhXC9kZG1uYzU1LTdmNGIwZmRlLTQwYTMtNGE0ZS05ZjY0LWE1ZjhkMDQyNTU5MC5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pvLEAPh1mh0BywyIpmWMU6g_NfKnVuO4PfPABRB138I"
+            Image:"https://imgur.com/K8iCSyy"
         },
         {
             Title: "Hollow mountains",
             Artist: "SoftRider62",
-            Mediums: "Digitala Art",
+            Mediums: "Digital Art",
             Date: "Janurary 2022",    
             Image:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f4e7a5a6-5bb9-4d74-badc-511a4a806c8a/de3o8zr-202ac957-5597-453d-8028-cbcb12b16597.jpg/v1/fill/w_621,h_350,q_70,strp/hollow_mountains_by_softyrider62_de3o8zr-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIyIiwicGF0aCI6IlwvZlwvZjRlN2E1YTYtNWJiOS00ZDc0LWJhZGMtNTExYTRhODA2YzhhXC9kZTNvOHpyLTIwMmFjOTU3LTU1OTctNDUzZC04MDI4LWNiY2IxMmIxNjU5Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CvtrAhr_ytTo84LY7bMQxPN3V_VqNGiiIMiw2SpfSbo"
         },
         {
             Title: "Dark days",
             Artist: "SoftRider62",
-            Mediums: "Digitala Art",
+            Mediums: "Digital Art",
             Date: "December 2021", 
             Image:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f4e7a5a6-5bb9-4d74-badc-511a4a806c8a/dex66gp-8e6616c4-647b-4444-8045-c2a4b4646b6c.jpg/v1/fill/w_444,h_250,q_70,strp/dark_days_by_softyrider62_dex66gp-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MSIsInBhdGgiOiJcL2ZcL2Y0ZTdhNWE2LTViYjktNGQ3NC1iYWRjLTUxMWE0YTgwNmM4YVwvZGV4NjZncC04ZTY2MTZjNC02NDdiLTQ0NDQtODA0NS1jMmE0YjQ2NDZiNmMuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oYiIKMa4VosExPuEDCwTBR1-70hxaIxslH8qh6a3x9I"
         },
         {
             Title: "Stillness",
             Artist: "SoftRider62",
-            Mediums: "Digitala Art",
+            Mediums: "Digital Art",
             Date: "Janurary 2022", 
             Image:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f4e7a5a6-5bb9-4d74-badc-511a4a806c8a/deygrda-abb5f844-7c54-4730-9b83-037fa1131c44.jpg/v1/fill/w_1920,h_1081,q_75,strp/stillness_by_softyrider62_deygrda-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MSIsInBhdGgiOiJcL2ZcL2Y0ZTdhNWE2LTViYjktNGQ3NC1iYWRjLTUxMWE0YTgwNmM4YVwvZGV5Z3JkYS1hYmI1Zjg0NC03YzU0LTQ3MzAtOWI4My0wMzdmYTExMzFjNDQuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.4NOmqXEyNcL4ia44Zu8AwhFrX8gW7D1tww_7uy-cknA"
         },
