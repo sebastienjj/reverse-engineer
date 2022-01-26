@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <!-- This is my heading now -->
+    <%- include ('../partials/head.ejs', {page: 'New'}) %>
+    
+    <!-- This is my nav bar now -->
+    <%- include ('../partials/nav.ejs') %>
+
+        <section class="hero-is-medium has-background-light">
+            <div class="hero-body">
+                <h1 class="title">New artist page</h1>
+            </div>
+        </section>
+            <form action="/artists" method="POST">
+                <div class="field">
+                    <label class="label">artist Name</label>
+                    <div class="control">
+                        <input
+                            class="input"
+                            type="text"
+                            placeholder="My new favorite artist"
+                            name="name"
+                        />
+                    </div>
+                </div>
+        
+                <div class="field">
+                    <label class="label">artist Price</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="32" name="price" />
+                    </div>
+                </div>
+        
+                <div class="field">
+                    <label class="label">artist Image</label>
+                    <div class="control">
+                        <input
+                            class="input"
+                            type="text"
+                            placeholder="http://"
+                            name="image"
+                        />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">artist Description</label>
+                    <div class="control">
+                        <input
+                            class="input"
+                            type="text"
+                            placeholder="Tell the Users all about this"
+                            name="description"
+                        />
+                    </div>
+                </div>
+        
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-info">Create artist</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

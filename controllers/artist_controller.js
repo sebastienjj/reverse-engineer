@@ -1,4 +1,4 @@
-const route = require('color-convert/route');
+// const route = require('color-convert/route');
 const express = require('express');
 const router = express.Router();
 const {Artist} = require('../models');
@@ -10,7 +10,7 @@ Artist.deleteMany({},(error, deletedArtist)=>{
         {
             Name :'SoftRider62',
             Artwork : [ "Lost city", "Hollow mountains","Dark days","Stillness"],
-            Mediums : 'Digitala Art',
+            Mediums : 'Digital Art',
             numberOfPieces: '4'
         },
         {
@@ -22,7 +22,7 @@ Artist.deleteMany({},(error, deletedArtist)=>{
         {
           Name :'BlackSunRising',
           Artwork : [ "Birds in love", "The barbary ground squirrel","Big_black_bird","Jumping_high"],
-          Mediums : 'Digitala Art',
+          Mediums : 'Digital Art',
           numberOfPieces: '4'
         },
         {
@@ -34,11 +34,11 @@ Artist.deleteMany({},(error, deletedArtist)=>{
     ],
     function(error, createdArtist){
         if(error){
-            return cosole.log(error);
+            return console.log(error);
         }
         console.log("===seed Complete===");
         console.log(createdArtist)
-    })
+    });
     console.log(deletedArtist)
 });
 
@@ -49,7 +49,7 @@ router.get('/',(req, res)=>{
 
         console.log(foundArtist)
         res.render('index.ejs', {artists: foundArtist});
-    })
+    });
 });
 
 router.post('/', (req, res)=>{
@@ -58,7 +58,7 @@ router.post('/', (req, res)=>{
         console.log(error);
         console.log(createdArtist);
         res.redirect('/artist');
-    })
+    });
 });
 
 router.get('/new', (req, res)=>{
@@ -72,7 +72,7 @@ router.get('/:artistId', (req, res)=>{
         return res.status(404).render('404', {error: error});
     }
     res.render('show.ejs', {artist: foundArtist}); 
-    })
+    });
 });
 
 router.delete('/:artistId', (req, res)=>{
@@ -83,7 +83,7 @@ router.delete('/:artistId', (req, res)=>{
         }
         console.log(deletedArtist);
         return res.redirect('/artist');
-    })
+    });
 });
 
  router.get('/:artistId/edit',(req, res)=>{
