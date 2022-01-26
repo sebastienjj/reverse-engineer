@@ -22,7 +22,7 @@ const artWorkSchema = new mongoose.Schema(
        },
    //or mega bytes not sure how to do this
  Image: {
-       type:Number, 
+       type:String, 
        // required:true 
        }, //this isnt put in by the artist so does it need a required
 });
