@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // const connectionStr = 'mongodb://127.0.0.1/arts';
 
- const connectionStr ="mongodb+srv://JayUser1:JayUser1@cluster0.ab94z.mongodb.net/project2data?retryWrites=true&w=majority"
+ const connectionStr ='mongodb+srv://sei:bluedeviles@sei.7r9b2.mongodb.net/ProjectToDatabase?retryWrites=true&w=majority';
 
 mongoose.connect(connectionStr,
     { useNewUrlParser: true,
