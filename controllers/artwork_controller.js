@@ -56,7 +56,7 @@ router.get('/', async(req, res)=>{
 
 
 router.post('/', (req, res)=>{
-  ArtWork.creats(req.body, (error, createdArtWork)=>{
+  ArtWork.create(req.body, (error, createdArtWork)=>{
         if(error) return console.log(error);
        console.log(createdArtWork);
       res.redirect('/artwork');
