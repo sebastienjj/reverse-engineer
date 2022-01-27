@@ -200,3 +200,5 @@ router.delete('/:artworkId', (req, res) => {
        return res.redirect('/artworks');
     });
   });
+
+  module.exports = router;
