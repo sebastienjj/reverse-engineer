@@ -168,7 +168,16 @@ router.get('/:artworkId', (req, res) => {
     });
     
 });
-
+router.get('/:artworkId', (req, res) => {
+    ArtWork.findById(req.params.artworkId, (error, foundArtWork) => {
+        if (error) {
+           console.log(error);
+           res.status(404).render('404.ejs', {error: error});
+        };
+        return res.render('show.ejs', {artworks: foundArtWork});
+    });
+    
+});
 router.delete('/:artworkId', (req, res) => {
   ArtWork.findByIdAndDelete( req.params.artworkId, (error, deletedArtWork) => {
         if (error){

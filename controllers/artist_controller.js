@@ -31,7 +31,7 @@ Artist.deleteMany({},(error, deletedArtist)=>{
         {
           Name :'BlackSunRising',
           Artwork : [ "Birds in love", "The barbary ground squirrel","Big_black_bird","Jumping_high"],
-          Mediums : 'Digital Art',
+          Mediums : 'Photography',
           numberOfPieces: '4',
           Image:[ "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/614579ca-8f9d-4559-b178-152894c39639/d8wnb3s-4fa3a5d1-b097-42fb-9109-2fdac2ba9f05.jpg/v1/fill/w_1280,h_855,q_75,strp/jumping_high_by_blacksunrising_d8wnb3s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU1IiwicGF0aCI6IlwvZlwvNjE0NTc5Y2EtOGY5ZC00NTU5LWIxNzgtMTUyODk0YzM5NjM5XC9kOHduYjNzLTRmYTNhNWQxLWIwOTctNDJmYi05MTA5LTJmZGFjMmJhOWYwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WvHttaWz5_JBolDDEXia86ihPVkV86hTH8ESgrv91KQ",
             "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/614579ca-8f9d-4559-b178-152894c39639/dbrv3oi-698d31aa-1e50-40cd-977e-dde6f2ae6267.jpg/v1/fill/w_1280,h_855,q_75,strp/birds_in_love_by_blacksunrising_dbrv3oi-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU1IiwicGF0aCI6IlwvZlwvNjE0NTc5Y2EtOGY5ZC00NTU5LWIxNzgtMTUyODk0YzM5NjM5XC9kYnJ2M29pLTY5OGQzMWFhLTFlNTAtNDBjZC05NzdlLWRkZTZmMmFlNjI2Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.cMfJ_C4OsvhlNr_nSlMII_1On1L7oDbunp8Hv2qgY9E",
