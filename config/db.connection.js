@@ -1,8 +1,15 @@
 const mongoose = require('mongoose');
 
-const connectionStr = 'mongodb://127.0.0.1/arts';
+const connectionStr = 'mongodb+srv://sei:bluedeviles@sei.7r9b2.mongodb.net/ProjectToDatabase?retryWrites=true&w=majority';
 
-mongoose.connect(connectionStr)
+mongoose.connect(connectionStr,
+    { useNewUrlParser: true,
+    useUnifiedTopology: true
+    },
+    ()=>{
+        console.log('Connected to MongoDB');
+    }
+    );
 
 mongoose.connection.on('connected', () => {
     
