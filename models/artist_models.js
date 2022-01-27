@@ -4,20 +4,20 @@ const artistSchema = new mongoose.Schema(
  {
  Name: {
     type: String, 
-    // required: true, 
-    // unique: true
+    required: true, 
+    unique: true
    },
  Artwork: [{
    type:String, 
-  //  required:true
+   required:true
  }],
  Mediums: {
     type: String, 
-    // required: true
+    required: true
    },
  numberOfPieces: {
    type:Number, 
-  //  required:true
+   required:true
  },
  Image: [{type:String
  }]

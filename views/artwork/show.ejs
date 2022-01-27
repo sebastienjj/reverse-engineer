@@ -7,31 +7,35 @@ This is my nav bar now
 
     <section class="hero is-medium has-background-light">
     <div class="hero-body">
-        <h1 class="title">artwork Show Page</h1>
+        <h1 class="title">artwork Show </h1>
     </div>
     </section>
 
     <div class="container is-max-widescreen p-5">
-    <article class="media">
-        <figure class="media-left">
-        <p class="image is-328x328">
-            <img src="<%= artworks.Image %>" alt="artwork img" />
-        </p>
-        </figure>
+        <article class="media">
+            <%for(let i=0; i< artworks.Image.length; i++){%>
+                <% const image = artworks.Image[i]%>
+                <section class="card-image">
+                    <figure class="media-left">
+                 
+                        <img src="<%= artworks.Image %>" alt="artwork img" />
+                        <h3><%= artworks.Artwork[i] %></h3>
+                    </figure>
+                </section>
+                <% } %>
         <div class="media-content">
         <div class="content">
-            <h3>Title: <%= artworks.Title %></h3>
-            <small>Artist: $<%= artworks.Artist %></small>
-            <small>Mediums: $<%= artworks.Mediums %></small>
-            <small>Date: $<%= artworks.Date %></small>
+            
+            <small><%= artworks.Mediums %></small>
+            
             <div class="field mt-5 is-grouped">
             <div class="control">
-                <a class="button is-info" href="/artwork/<%= artworks.Title %>/edit">Edit artWork
+                <a class="button is-info" href="/artwork/<%= artworks._id %>/edit">Edit artwork
                 </a>
             </div>
             <p class="control">
-                <form action="/artworkw/<%= artworks._id %>?_method=DELETE" method="POST">
-                    <input class="button is-danger" type="submit" value="Delete artWork"/>                    
+                <form action="/artwork/<%= artworks._id %>?_method=DELETE" method="POST">
+                    <input class="button is-danger" type="submit" value="Delete artwork"/>                    
                 </form>
             </p>
             </div>
@@ -40,4 +44,4 @@ This is my nav bar now
     </article>
     </div>
 </body>
-</html> 
+</html>
