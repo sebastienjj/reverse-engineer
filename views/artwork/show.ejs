@@ -1,14 +1,12 @@
     <!DOCTYPE html>
     <html lang="en">
-    <%- include ('../partials/head.ejs', {page: 'Artwork' }) %>
-      
-    This is my nav bar now
-    <%- include ('../partials/nav.ejs') %>
+        <%- include ('../partials/head.ejs', {page: 'Artwork' }) %>
+        <%- include ('../partials/nav.ejs') %>
 
         <section class="hero is-medium has-background-light">
-        <div class="hero-body">
-            <h1 class="title">artwork Show </h1>
-        </div>
+            <div class="hero-body">
+                <h1 class="title">artwork Show </h1>
+            </div>
         </section>
 
         <div class="container is-max-widescreen p-5">
@@ -23,10 +21,10 @@
                         </figure>
                     </section>
                     <% } %>
-            <div class="media-content">
-            <div class="content">
+                <div class="media-content">
+                    <div class="content">
                 
-                <small><%= artworks.Mediums %></small>
+                        <small><%= artworks.Mediums %></small>
                 
                 <div class="field mt-5 is-grouped">
                 <div class="control">
