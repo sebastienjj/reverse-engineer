@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- This is my heading now -->
+    <%- include ('../partials/head.ejs', {page: 'All artwork'}) %>
+    
+    <!-- This is my nav bar now -->
+    <%- include ('../partials/nav.ejs') %>
+    <section class="hero is-medium has-background-light">
+        <div class="hero-body">
+            <p class="title">All artwork</p>
+        </div>
+    </section>
+    
+    <main class="container is-max-widescreen">
+        <div class="columns is-multiline p-5">
+            <% for(let idx = 0; idx < artwork.length; idx++){ %> 
+                <% const art = artwork[idx] %>
+                        <div class="column is-one-third">
+                            <article class="card">
+                               
+                                <section class="card-image">
+                                    <figure class="image is-3by3">
+                                <img src="<%= art.Image[2] %>" alt="Placeholder image" />
+                            </figure>
+                        </div>
+                    </section>
+                  
+                    <div class="card-content">
+                        <div class="content">
+                            <h3>
+                                <a href="/artwork/<%= art._id %>"><%= art.Mediums %> </a>
+                            </h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <% } %>
+        </div>
+    </main>
+</body>
+</html>
