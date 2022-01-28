@@ -47,8 +47,6 @@ What did you learn?
 through the process of building the website we learned an array of things. as consumers first our initial thought was this would be easy as a drag and drop system
 but create a detailed wire-frame we soon learned that this was not the case. We learn how to implement source code, how to connect different branches and most importantly how to have our server up and running efficiently.
 
-What makes your project stand out?
-
 <h2>Some Features</h2>
 
 <li>  separating items by mediums and schema characteristics </li>
