@@ -97,13 +97,6 @@ body{
     max-height: 100px;
     height: 50px;
   } */
-.cancelbutton{  display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    background-color: #000000;
-    
-    max-height: 50px;}
 
 .display_image{
     background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
@@ -257,8 +250,10 @@ input[type=text]:focus {
     font-size: 16px;
     cursor: pointer;
     background-color: #000000;
-    display:inline;
     height: 50px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 5px;
 }
 .cancelbutton {
     border: none;
@@ -270,8 +265,10 @@ input[type=text]:focus {
     font-size: 16px;
     cursor: pointer;
     background-color: #000000;
-    display:inline;
     height: 50px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 5px;
 }
 .deletebutton{
     border: none;

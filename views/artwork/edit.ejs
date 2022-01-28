@@ -43,7 +43,7 @@
             type="text"
             placeholder=" image"
             name="image"
-            value="<%= artwork.Image[i] %> "
+            value="<%= artwork.Image %> "
             />
         </div>
         </div>
@@ -55,7 +55,7 @@
             type="text"
             placeholder=" mediums"
             name="Mediums"
-            value="<%= artwork.Mediums[i] %> "
+            value="<%= artwork.Mediums %> "
             />
         </div>
         </div>
@@ -63,10 +63,12 @@
 
         <div class="field is-grouped">
         <div class="control">
+            <button class="editbutton" type="submit">Edit Art</button> 
+            
             <a class="cancelbutton " href="/artwork/<%= artwork._id %> "
             >Cancel</a
             >
-            <button class="editbutton" type="submit">Edit Art</button>
+            
         </div>
         </div>
     </form>
