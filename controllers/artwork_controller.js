@@ -91,19 +91,12 @@ router.delete('/:artworkId', (req, res) => {
   });
 
   router.get('/:artworkId/edit', async(req, res)=>{
-    console.log(req.params.artworkId,"REQ.PRAMS")
     try{
       const artwork = await ArtWork.findById(req.params.artworkId).exec()
       const context ={artwork}
-      console.log('=============')
-      console.log(context)
-      console.log('=============')
       return res.render('artwork/edit.ejs', context);
     }
     catch(error){
-      console.log('=============')
-            console.log(error);
-            console.log('=============')
             res.status(404).render('404.ejs', {error: error});
         }
        res.render('artwork/edit.ejs', {context});
@@ -113,10 +106,8 @@ router.delete('/:artworkId', (req, res) => {
   router.put('/:artworkId', (req, res)=>{
     ArtWork.findByIdAndUpdate(req.params.artworkId, req.body, (error, updatedArtWork)=>{
        if(error){
-           console.log(error);
            res.status(404).render('404.ejs', {error: error});
        }
-       console.log(updatedArtWork);
        return res.redirect('/artwork');
     });
   });

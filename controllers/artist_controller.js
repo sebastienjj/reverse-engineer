@@ -47,25 +47,21 @@ Artist.deleteMany({},(error, deletedArtist)=>{
           Image:["https://i.imgur.com/ErnA3FG.jpg", "https://i.imgur.com/l42fKzR.jpg", "https://i.imgur.com/UiNIvCU.jpg", "https://i.imgur.com/qcDNyxk.jpg"],
         },
     ],
-    // function(error, createdArtist){
-    //     if(error){
-    //         return cosole.log(error);
-    //     }
-    //     console.log("===seed Complete===");
-    //     console.log(createdArtist)
-    
+   
     )
     console.log(deletedArtist)
 });
 
-router.get('/',(req, res)=>{
-    Artist.find({}, (error, foundArtist)=>{
-        if(error) 
-        return console.log(error);
-
-        console.log(foundArtist)
-        res.render('artist/index1.ejs', {artists: foundArtist});
-    })
+router.get('/', async(req, res)=>{
+    try{
+        const artist = await Artist.find()
+        const context = {artist}
+        return res.render('artist/index1.ejs',context)
+    }
+    catch(error){
+        res.status(404).render('404.ejs', {error: error})
+        
+    }
 });
 
 router.post('/', (req, res)=>{
@@ -84,65 +80,9 @@ router.get('/new', (req, res)=>{
 router.get('/:artistId', (req, res) => {
     Artist.findById(req.params.artistId, (error, foundArtist) => {
         if (error) {
-           console.log(error);
            res.status(404).render('404.ejs', {error: error});
         };
-        return res.render('artist/show1.ejs', {artworks: foundArtist});
-    });
-    
-});
-
-// router.get('/:artistId', async(req, res)=>{
-//     try{
-//         const artist = await Artist.findById(req.params.artistId)
-//         const context = {artist}
-//         console.log("==============================================")
-//         console.log(context)
-//         console.log("==============================================")
-//         return res.render('artist/show1.ejs', {artist})
-//     }
-//     catch(error){
-//         console.log(error)
-//         res.status(404).render('404.ejs', {error: error})
-        
-//     }
-// });
-
-router.delete('/:artistId', (req, res)=>{
-    Artist.findByIdAndDelete(req.params.artistId, (error, deletedArtist)=>{
-        if(error){
-             console.log(error);
-             return res.status(404).render('404.ejs', {error: error});
-        }
-        console.log(deletedArtist);
-        return res.redirect('/artists');
-    })
-});
-
- router.get('/:artistId/edit',(req, res)=>{
-     Artist.findById(req.params.artistId, (error, updateArtist)=>{
-        if(error){
-            console.log(error);
-            return res.status(404).render('404.ejs', {error: error});
-        }
-        console.log(updateArtist);
-        res.render('artist/edit1.ejs', {artist: updateArtist});
-
-     });
-});
-
-router.put('/:artistId', (req, res)=>{
-    Artist.findByIdAndUpdate(req.params.artistId, req.body, (error, updateArtist)=>{
-        if(error){
-            console.log('==============')
-            console.log(error);
-            console.log('==============')
-            return res.status(404).render('404.ejs', {error: error});
-        }
-        console.log('==============')
-        console.log(updateArtist)
-        console.log('==============')
-        return res.redirect('/artist'); 
+        return res.render('artwork', {artworks: foundArtist});
     });
     
 });
