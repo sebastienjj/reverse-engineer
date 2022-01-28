@@ -32,6 +32,6 @@ app.get('/',(req, res)=>{
      return res.sendStatus(404)
     //  .render('404',)
  })
- app.listen(process.env.PORT || PORT, ()=>
+ app.listen(PORT, ()=>
  console.log(`listening for client requests on port ${PORT}`)
  );

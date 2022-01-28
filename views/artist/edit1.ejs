@@ -1,20 +1,10 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
+<<<< <!DOCTYPE html>
 <html>
     <!-- This is my heading now -->
-    <%- include ('./partials/head.ejs', {page: 'edit form'}) %>
+    <%- include ('../partials/head.ejs', {page: 'edit form'}) %>
     
     <!-- This is my nav bar now -->
-    <%- include ('./partials/nav.ejs') %>
-=======
-    <!DOCTYPE html>
-    <html>
-        <!-- This is my heading now -->
-        <%- include ('../partials/head.ejs', {page: 'edit form'}) %>
-        
-        <!-- This is my nav bar now -->
-        <%- include ('../partials/nav.ejs') %>
->>>>>>> development
+    <%- include ('../partials/nav.ejs') %>
 
     <section class="hero is-medium has-background-light">
     <div class="hero-body">
@@ -23,8 +13,8 @@
     </section>
 
     <section class="container is-max-widescreen p-5">
-    <!--  NOTE: action will be the route, method will be the HTTP verb-->
-    <form action="/artist/<%=artist.id %>?_method=PUT" method="POST">
+    
+    <form action="/artist/<%=artist._id %>?_method=PUT" method="POST">
         <div class="field">
         <label class="label">Artist Name</label>
         <div class="control">
@@ -38,7 +28,6 @@
         </div>
         </div>
 
-<<<<<<< HEAD
         <div class="field">
         <label class="label">Artwork </label>
         <div class="control">
@@ -51,23 +40,6 @@
             />
         </div>
         </div>
-=======
-        <section class="container is-max-widescreen p-5">
-        
-        <form action="/artist/<%=artist._id %>?_method=PUT" method="POST">
-            <div class="field">
-            <label class="label">Artist Name</label>
-            <div class="control">
-                <input
-                class="input"
-                type="text"
-                placeholder="artist name"
-                name="name"
-                value="<%= artist.Name %> "
-                />
-            </div>
-            </div>
->>>>>>> development
 
         <div class="field">
         <label class="label">Art Image</label>

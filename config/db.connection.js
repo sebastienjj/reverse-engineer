@@ -1,14 +1,9 @@
 const mongoose = require('mongoose');
 
-<<<<<<< HEAD
 // const connectionStr = 'mongodb://127.0.0.1/arts';
 
  const connectionStr ='mongodb+srv://sei:bluedeviles@sei.7r9b2.mongodb.net/ProjectToDatabase?retryWrites=true&w=majority';
 
-=======
-const connectionStr = 'mongodb+srv://sei:bluedeviles@sei.7r9b2.mongodb.net/ProjectToDatabase?retryWrites=true&w=majority';
-
->>>>>>> development
 mongoose.connect(connectionStr,
     { useNewUrlParser: true,
     useUnifiedTopology: true

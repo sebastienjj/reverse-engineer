@@ -1,42 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-    <%- include ('../partials/head.ejs', {page: 'Artist' }) %>
-    
-    This is my nav bar now
-    <%- include ('../partials/nav.ejs') %>
+    <html lang="en">
+        <%- include ('../partials/head.ejs', {page: 'Artist' }) %>
+        
+        This is my nav bar now
+        <%- include ('../partials/nav.ejs') %>
 
-    <section class="hero is-medium has-background-light">
-    <div class="hero-body">
-        <h1 class="title">artist Show </h1>
-    </div>
-    </section>
+        <section class="hero is-medium has-background-light">
+        <div class="hero-body">
+            <h1 class="title">artist Show </h1>
+        </div>
+        </section>
 
-<<<<<<< HEAD
-    <main class="container is-max-widescreen p-5">
-        <div class="columns is-multiline p-5">
-           
-            
-                    <div class="column is-one-third">
-                        <article class="card">
-                             <%for(let i=0; i< artist.Image.length; i++){%>
-                                <% const image = artist.Image[i]%>
-                                    <section class="card-image">
-                                        <figure class="image is-3by3">
-                                            <img src="<%= artist.Image[i] %>" alt="Placeholder image" />
-                                            <small><%= artist.Artwork[i] %></small>
-                                        </figure>
-                                    </section>
-                             <% } %>
-                            <div class="card-content">
-                                <div class="content">
-                                    <h3> <%= artist.Name %></h3>
-                                    <small><%= artist.Mediums %></small>
-                                    <small><%= artist.Date %></small>
-                       
-                                    <!-- <div class="field mt-5 is-grouped"> -->
-                                    <div class="control">
-                                        <a class="button is-info" href="/artists/<%= artist._id %>/edit">Edit artist</a>
-=======
         <main class="container is-max-widescreen p-5">
             <div class="columns is-multiline p-5">
                
@@ -67,19 +41,12 @@
                                                 <input class="button is-danger" type="submit" value="Delete artist"/>                    
                                             </form>
                                         </p>
->>>>>>> development
                                     </div>
-                                    <p class="control">
-                                        <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
-                                            <input class="button is-danger" type="submit" value="Delete artist"/>                    
-                                        </form>
-                                    </p>
                                 </div>
-                            </div>
-                        </article>
-                    </div>
-            
-        </div>
-    </main>   
-</body>
+                            </article>
+                        </div>
+                
+            </div>
+        </main>   
+    </body>
 </html> 
