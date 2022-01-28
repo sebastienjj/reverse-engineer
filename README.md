@@ -34,20 +34,20 @@ dependencies: </h3>
 Browse to http://localhost:2000
 
 <!-- // some questions that needs to be answered// -->
-<h2> Questioned we asked ourselves while creating this project</h2>
+<h2> Questioned we asked ourselves while creating this project. </h2>
 
 What was your motivation?
-we enjoy art in our spare time. We enjoys doing various forms of arts and crafts, through the love for creating things in particular, we found that by working wholeheartedly in every task we do.
+<h3> we enjoy art in our spare time. We enjoys doing various forms of arts and crafts, through the love for creating things in particular, we found that by working wholeheartedly in every task we do. </h3>
 
 Why did you build this project?
-we built because we found a common interest where we can immerse ourselves in the project and not feel inadequate. we wanted from a place of love and understand with a good amount of obstacles and challenges. 
+<h3> we built because we found a common interest where we can immerse ourselves in the project and not feel inadequate. we wanted from a place of love and understand with a good amount of obstacles and challenges.</h3> 
 
 What problem does it solve?
-we created a space for sharing art work that is pandemic friendly that made our patrons feel safe to view our art gallery. We gave artist a medium to share their work without having to be in the gallery physically.  
+<h3> we created a space for sharing art work that is pandemic friendly that made our patrons feel safe to view our art gallery. We gave artist a medium to share their work without having to be in the gallery physically.</h3>  
 
 What did you learn?
-through the process of building the website we learned an array of things. as consumers first our initial thought was this would be easy as a drag and drop system
-but create a detailed wire-frame we soon learned that this was not the case. We learn how to implement source code, how to connect different branches and most importantly how to have our server up and running efficiently.
+<h3> Through the process of building the website we learned an array of things. as consumers first our initial thought was this would be easy as a drag and drop system
+but create a detailed wire-frame we soon learned that this was not the case. We learn how to implement source code, how to connect different branches and most importantly how to have our server up and running efficiently. </h3>
 
 <h2>Some Features</h2>
 
