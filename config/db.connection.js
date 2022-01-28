@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-const connectionStr = "mongodb://127.0.0.1:27017/arts";
+require('dotenv').config();
+const connectionStr = process.env.MONGO_URI;
+
 mongoose.connect(connectionStr,
     { useNewUrlParser: true,
     useUnifiedTopology: true
@@ -22,3 +24,4 @@ mongoose.connection.on('error', (error) => {
 mongoose.connection.on('disconnected', () => 
 
 console.log('MongoDB disconnected  ⚡️ 🔌 ⚡️'));
+

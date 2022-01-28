@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <!-- This is my heading now -->
     <%- include ('../partials/head.ejs', {page: 'New'}) %>
-    
-    <!-- This is my nav bar now -->
     <%- include ('../partials/nav.ejs') %>
-
         <section class="hero-is-medium has-background-light">
             <div class="hero-body">
-                <h1 class="title">New artWork page</h1>
+                <h1 class="title">New Artwork</h1>
             </div>
         </section>
             <form action="/artWorks" method="POST">
                 <div class="field">
-                    <label class="label">artWork Name</label>
+                    <label class="label">Artwork Name</label>
                     <div class="control">
                         <input
                             class="input"
                             type="text"
-                            placeholder="My new favorite artWork"
+                            placeholder="My new favorite artwork"
                             name="name"
                         />
                     </div>
                 </div>
         
                 <div class="field">
-                    <label class="label">artWork Price</label>
+                    <label class="label">Artwork Mediums</label>
                     <div class="control">
-                        <input class="input" type="number" placeholder="32" name="price" />
+                        <input class="input" type="text" placeholder="Mediums" name="Mediums" />
                     </div>
                 </div>
         
                 <div class="field">
-                    <label class="label">artWork Image</label>
+                    <label class="label">Artwork Image</label>
                     <div class="control">
                         <input
                             class="input"
@@ -42,21 +38,9 @@
                         />
                     </div>
                 </div>
-                <div class="field">
-                    <label class="label">artWork Description</label>
-                    <div class="control">
-                        <input
-                            class="input"
-                            type="text"
-                            placeholder="Tell the Users all about this"
-                            name="description"
-                        />
-                    </div>
-                </div>
-        
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-info">Create artWork</button>
+                        <button class="button is-info">Create Artwork</button>
                     </div>
                 </div>
             </form>
