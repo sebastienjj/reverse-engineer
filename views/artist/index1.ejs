@@ -8,7 +8,7 @@
     <%- include ('../partials/nav.ejs') %>
     <section class="hero is-medium has-background-light">
         <div class="hero-body">
-            <p class="title">All artist</p>
+            <!-- <p class="title">All artist</p> -->
         </div>
     </section>
     
@@ -19,20 +19,25 @@
                 
                 <div class="column is-one-third">
                     <article class="card">
-                        <section class="card-image">
                             <figure class="image is-3by3">
                                 <img src="<%= artist.Image[2] %>" alt="Placeholder image" />
+                                <div class="content">
+                                    <h3>
+                                        <a href="/artists/<%= artist._id %>"><%= artist.Name %> </a>
+                                    </h3>
+                                    
+                                </div>
                             </figure>
                         </div>
-                    </section>
-                    <div class="card-content">
+                    
+                    <!-- <div class="card-content">
                         <div class="content">
-                            <h3>
+                            <!-- <!-- <h3>
                                 <a href="/artists/<%= artist._id %>"><%= artist.Name %> </a>
-                            </h3>
-                            
+                            </h3> -->
+                             -->
                         </div>
-                    </div>
+                    </div> -->
                 </article>
             </div>
             <% } %>
