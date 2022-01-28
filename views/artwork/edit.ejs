@@ -8,17 +8,20 @@
 
     <section class="hero is-medium has-background-light">
     <div class="hero-body">
-        <h1 class="title">Edit Art </h1>
+        
     </div>
+    <div class=display_image> </div>
+    <h1 class="title">Edit Art </h1>
     </section>
     
 
     <section class="container is-max-widescreen p-5">
     <!--  NOTE: action will be the route, method will be the HTTP verb-->
-    <form action="/artwork/<%=artwork._id %>?_method=PUT" method="POST">
+   
+    <form class= 'editform' action="/artwork/<%=artwork._id %>?_method=PUT" method="POST">
         
        
-
+        
         <div class="field">
         <label class="label">Artwork </label>
         <div class="control">
@@ -60,13 +63,14 @@
 
         <div class="field is-grouped">
         <div class="control">
-            <a class="button is-info" href="/artwork/<%= artwork._id %> "
+            <a class="cancelbutton " href="/artwork/<%= artwork._id %> "
             >Cancel</a
             >
-            <button class="button is-success" type="submit">Edit Art</button>
+            <button class="editbutton" type="submit">Edit Art</button>
         </div>
         </div>
     </form>
     </section>
+    <div class=display_image> </div>
 </body>
 </html>

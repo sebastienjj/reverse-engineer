@@ -8,7 +8,8 @@
     <%- include ('../partials/nav.ejs') %>
     <section class="hero is-medium has-background-light">
         <div class="hero-body">
-            <p class="title">All artwork</p>
+            <p class="title"></p>
+            <div class=display_image> </div>
         </div>
     </section>
     
@@ -17,13 +18,13 @@
             <% for(let idx = 0; idx < artwork.length; idx++){ %> 
                 <% const art = artwork[idx] %>
                         <div class="column is-one-third">
-                            <article class="card">
+                            <!-- <article class="card"> -->
                                
-                                <section class="card-image">
+                                <!-- <section class="card-image"> -->
                                     <figure class="image is-3by3">
                                 <img src="<%= art.Image[2] %>" alt="Placeholder image" />
                                 <h3>
-                                    <a href="/artwork/<%= art._id %>"><%= art.Mediums %> </a>
+                                    <a class= 'labels' href="/artwork/<%= art._id %>"><%= art.Mediums %>  </a>
                                 </h3>
                             </figure>
                         </div>
@@ -36,10 +37,12 @@
                             </h3>
                         </div> -->
                     <!-- </div> -->
-                </article>
+                <!-- </article> -->
             </div>
             <% } %>
         </div>
     </main>
+    <div class="description">The World’s Top Galleries, Auction Houses, and Museums — All In One Place. Buy art. Bid online. Follow artists. Discover art. Purchase instantly. Place inquiries.</div>
+    <div class=display_image> </div>
 </body>
 </html>
