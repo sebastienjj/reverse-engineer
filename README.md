@@ -7,12 +7,14 @@ https://www.artsy.net/collect
 
 <h1>Start a new site</h1>
 
-<h3> Technology utilise </h3>
 
-HTML5
-CSS
-Javascript
-Node.js
+<h3> Technology utilise </h3>
+<li>  HTML5</li>
+<li> CSS </l1>
+<li> Javascript </l1>
+<li>  Node.js </li>
+<li> heroku </l1>
+
 
 <h3> Framework </h3>
 Bootstrap 
