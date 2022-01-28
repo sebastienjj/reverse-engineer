@@ -19,8 +19,7 @@ https://www.artsy.net/collect
 <h3> Framework </h3>
 Bootstrap 
 
-<h3> Here are some of the NPM Dependencies we've Installed in our VS-CODE. 
-dependencies: </h3> 
+<h3> Here are some of the NPM Dependencies we've Installed in our VS-CODE.  </h3> 
 
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.1.3",
