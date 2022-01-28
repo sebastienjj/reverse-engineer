@@ -7,9 +7,10 @@
 
         <section class="hero is-medium has-background-light">
         <div class="hero-body">
+            <div class=display_image> </div>
             <h1 class="title">artwork Show </h1>
         </div>
-        <div class=display_image> </div>
+        
         </section>
 
         <div class="container is-max-widescreen p-5">
@@ -19,7 +20,7 @@
                     <section class="card-image">
                         <figure class="media-left">
                      
-                            <img src="<%= artworks.Image %>" alt="artwork img" />
+                            <img src="<%= artworks.Image[i] %>" alt="artwork img" />
                             <h3><%= artworks.Artwork[i] %></h3>
                         </figure>
                     </section>
@@ -35,8 +36,8 @@
                     </a>
                 </div>
                 <p class="control">
-                    <form action="/artwork/<%= artworks._id %>?_method=DELETE" method="POST">
-                        <input class="button is-danger" type="submit" value="Delete artwork"/>                    
+                    <form class=editform  action="/artwork/<%= artworks._id %>?_method=DELETE" method="POST">
+                        <input class="deletebutton is-danger" type="submit" value="Delete artwork"/>                    
                     </form>
                 </p>
                 </div>
@@ -44,5 +45,6 @@
             </div>
         </article>
         </div>
+        <div class=display_image> </div>
     </body>
     </html> 

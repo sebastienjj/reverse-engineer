@@ -72,7 +72,39 @@ body{
     background-color:transparent;
     justify-content: space-evenly;
 }
-.editform{}
+.editform{
+    background-color: #fff;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+    text-align:center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: space-around;
+    
+}
+/* .button.editbutton{
+   
+    display: inline-block;
+    font-size: 16px;
+    margin: 150px 150px;
+    cursor: pointer;
+    background-color: #000000;
+    max-height: 100px;
+    height: 50px;
+  } */
+.cancelbutton{  display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #000000;
+    
+    max-height: 50px;}
+
 .display_image{
     background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url('../background/bluebackdrop.jpeg');
@@ -82,7 +114,10 @@ height: 150px;
 width: 2000px;
 
 }
-figure{ border-color: transparent;}
+figure{ 
+    border-color: transparent;
+}
+
 main.container {
     display:inline-flex;
     flex-direction: row;
@@ -169,11 +204,10 @@ img{
     background-color: transparent;
      width: 0px;
     }
-form{ 
+.newform{ 
     background-color: #fff;
     height: 450px;
     width: 300px;
-    margin: 0 auto;
     padding: 10px;
     margin:0 auto;
     padding:0px;
@@ -236,6 +270,32 @@ input[type=text]:focus {
     font-size: 16px;
     cursor: pointer;
     background-color: #000000;
+    display:inline;
+    height: 50px;
+}
+.deletebutton{
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000000;
+    display:inline;
+    height: 50px;
+}
+.editform{
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
     display:inline;
     height: 50px;
 }
